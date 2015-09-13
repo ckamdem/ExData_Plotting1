@@ -11,5 +11,5 @@ data1$Date <- as.Date(data1$Date, "%d/%m/%Y")
 hist(subset(data1, Date >= "2007-02-01" & Date <= "2007-02-02")$Global_active_power, col = "red", main = "Global Active Power", xlab ="Global Active Power (kilowatts)" )
 
 ## Save in PNG file
-dev.copy(png, "/media/ck/Multimedia/Coursera_DAtaScience/Project1ExpData/plot1.png", width = 480, height = 480)
+dev.copy(png, "plot1.png", width = 480, height = 480)
 dev.off()
